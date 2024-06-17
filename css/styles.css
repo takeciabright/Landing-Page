@@ -19,11 +19,32 @@ body{
     "bn bc";
 }
 
+h3,
+h1,
+.bookNames{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
 h3{
+    font-family: "Playfair";
+    font-size: 40px;
     grid-area: hd;
 }
+
 h1{
+    font-family:"Cormorant Garamond" ;
+    font-weight: 100;
+    font-size: 110px;
     grid-area: tt;
+}
+
+.bookNames{
+    font-family: "Cormorant Garamond" ;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 50px;
+    grid-area: bn;
 }
 
 img{
@@ -37,6 +58,7 @@ img{
     text-align: center;
 
 }
+
 p{
     font-family: "Yuji Syuku";
     font-size: 16px;
