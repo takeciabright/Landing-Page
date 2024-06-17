@@ -53,6 +53,8 @@ h1{
 }
 
 .book-mockup{
+    height: 62%;
+    width: 100%;
     grid-area: bc;
 }
 
