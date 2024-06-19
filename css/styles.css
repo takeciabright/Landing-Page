@@ -94,7 +94,8 @@ p{
     margin-right: 250px;
 }
 
-.landingAuthor{
+.landingAuthor,
+.landingNewsletter{
     text-align: center;
 }
 
@@ -108,4 +109,11 @@ h2{
 .author{
     height: 309px;
     border-radius: 50% ;
+}
+
+.subscribe{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
