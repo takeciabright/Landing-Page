@@ -25,11 +25,16 @@ body{
 .landingIntro{
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:100px 100px;
+    grid-template-rows: 100px 100px;
     grid-template-areas:
     "hd bc"
     "tt bc"
     "bn bc";
+}
+
+.informativeInfo{
+    position: relative;
+    top: 100px;
 }
 
 h3,
@@ -40,22 +45,25 @@ h1,
 
 h3{
     font-family: "Playfair";
-    font-size: 40px;
+    font-size: 35px;
     grid-area: hd;
+    margin-bottom: 0;
 }
 
 h1{
     font-family:"Taviraj" ;
     font-weight: 100;
-    font-size: 110px;
+    font-size: 6.875em;
+    margin: 0;
     grid-area: tt;
 }
 
 .bookNames{
+    position: relative;
     font-family: "Taviraj" ;
     font-weight: 100;
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 16px;
+    color: white;
     grid-area: bn;
 }
 
