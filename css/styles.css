@@ -24,7 +24,7 @@ body{
 
 .landingIntro{
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
     grid-template-rows: 100px 100px;
     grid-template-areas:
     "hd bc"
@@ -53,7 +53,7 @@ h3{
 h1{
     font-family:"Taviraj" ;
     font-weight: 100;
-    font-size: 6.875em;
+    font-size: 5.875em;
     margin: 0;
     grid-area: tt;
 }
@@ -74,8 +74,10 @@ h1{
 }
 
 .book-mockup{
+    left: 80px;
+    position: relative;
     height: 100%;
-    width: 100%;
+    width: 87%;
     grid-area: bc;
 }
 
