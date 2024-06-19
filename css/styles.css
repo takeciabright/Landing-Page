@@ -35,8 +35,7 @@ body{
 h3,
 h1,
 .bookNames{
-    margin-left: 75px;
-    margin-right: 75px;
+    text-align: center;
 }
 
 h3{
