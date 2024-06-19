@@ -18,7 +18,8 @@ body{
 
 .landingIntro,
 .landingSynopsis,
-.landingAuthor{
+.landingAuthor,
+.landingNewsletter{
     background-image: url("/media/background.png");
     background-size: cover;
 }
