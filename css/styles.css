@@ -17,7 +17,8 @@ body{
 }
 
 .landingIntro,
-.landingSynopsis{
+.landingSynopsis,
+.landingAuhtor{
     background-image: url("/media/background.png");
     background-size: cover;
 }
@@ -91,4 +92,20 @@ p{
     margin-top: 50px;
     margin-left: 250px;
     margin-right: 250px;
+}
+
+.landingAuthor{
+    text-align: center;
+}
+
+h2{
+    font-family: "Taviraj";
+    font-weight: 300;
+    font-size: 3.875em;
+    margin: 0;
+}
+
+.author{
+    height: 309px;
+    border-radius: 50% ;
 }
