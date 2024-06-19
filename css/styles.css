@@ -74,10 +74,8 @@ h1{
 }
 
 .book-mockup{
-    left: 80px;
-    position: relative;
-    height: 100%;
-    width: 87%;
+    height: 700px;
+    width: 500px;
     grid-area: bc;
 }
 
