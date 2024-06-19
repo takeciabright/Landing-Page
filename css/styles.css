@@ -67,6 +67,12 @@ h1{
     grid-area: bn;
 }
 
+.spacer{
+    position: relative;
+    top: 16px;
+    height: 45px;
+}
+
 .book-mockup{
     height: 62%;
     width: 100%;
