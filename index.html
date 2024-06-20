@@ -61,15 +61,12 @@
             <section class="landingNewsletter">
                 <div class="subscribe">
                     <h2>SUBSCRIBE FOR THE MONTHLY NEWSLETTER</h2>
-                    <div class="form-box" id="firstName">
-                        <input type="text" name="Name" placeholder="Enter First Name">
-                    </div>
-                    <div class="form-box" id="emailAsdress">
-                        <input type="text" name="Email-address" placeholder="Enter Email">
-                    </div>
-                    <div class="subscribe-button">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="058e3a63-5981-4ef3-8c91-301cee282df7">
+                        <input type="text" name="Name" placeholder="Enter First Name" required>
+                        <input type="email" name="Email-address" placeholder="Enter Email" required>
                         <button type="submit">Submit</button>
-                    </div>
+                    </form>
                 </div>
             </section>
             <div id="footer">
