@@ -13,10 +13,41 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 50px 700px 700px 1100px 700px 100px 100px;
+    grid-template-rows: 45px 700px 700px 1100px 700px 100px 100px;
+}
+
+#nav{
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: 45px;
+    background-color: rgb(241, 236, 224);
+    text-align: center;
+}
+
+
+header{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    
+}
+
+header a{
+    color: #a27d3f;
+}
+
+ul li{
+    margin-right: 20px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+li a{
+    color: rgb(121 116 101);
 }
 
 a{
+    color: #cdb57f;
     text-decoration: none;
 }
 
