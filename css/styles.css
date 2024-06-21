@@ -13,7 +13,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 50px 700px 700px 1100px 700px 100px 50px;
+    grid-template-rows: 50px 700px 700px 1100px 700px 100px 100px;
 }
 
 a{
@@ -177,6 +177,15 @@ button{
 }
 
 img{
-    height: 95px;
+    height: 60px;
 
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Taviraj";
+    font-size: 12px;
+    font-weight: 300;
 }
