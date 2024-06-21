@@ -13,7 +13,11 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 50px 700px 700px 1100px 700px 50px;
+    grid-template-rows: 50px 700px 700px 1100px 700px 100px 50px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .landingIntro,
@@ -166,4 +170,13 @@ button{
   font-weight: 200;
   background-color: transparent;
   cursor: pointer;
+}
+
+.socialMedia{
+    text-align: center;
+}
+
+img{
+    height: 95px;
+
 }
