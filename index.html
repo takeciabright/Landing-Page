@@ -5,22 +5,18 @@
         <meta name="viewport" content="width=device-width, 
         initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/app.js"></script>
         <title>Olivie Blake</title>
     </head>
     <body>
         <div class="container">
-            <div id="nav">
-               <header><a href="#">Olivie Blake</a></header> 
-                <ul>
-                   <li> <a href="#">Books</a></li>
-                    <li> <a href="#">Series Synopsis</a></li>
-                    <li> <a href="#">Author</a></li>
-                    <li> <a href="#">Newsletter</a></li>
-                </ul>
-            </div>
 
-            <section class="landingIntro">
+             <header>
+                <nav id="nav">
+                    <ul id="nav-sections"></ul>
+                </nav>
+             </header>
+
+            <section id="landingIntro" data-nav="Books">
                 <div class="informativeInfo">
                     <h3>New York Times Best Selling Series</h3>
                     <h1>THE ATLAS SIX</h1>
@@ -36,7 +32,7 @@
                 <img class="book-mockup" src="media/book-mockup.png" alt="Books of series">
             </section>
 
-            <section class="landingSynopsis">
+            <section id="landingSynopsis" data-nav="Series Synopsis">
                 <p class="seriesSynopsis">
                     The Atlas Series is a crossover sci-fi/contemporary fantasy trilogy for adult audiences consisting of The Atlas Six (2022), The Atlas Paradox (2022), and The Atlas Complex (2024). 
                     The books are predominantly relationship and character driven and feature an ensemble cast of six morally gray characters competing for initiation to an elite secret society in a contemporary alternate universe where magic is built into the economy as capital. 
@@ -46,7 +42,7 @@
                     They are also unaware of Atlas's private agenda, which is revealed to have world-ending stakes that only they can prevent.
                 </p>
             </section>
-            <section class="landingAuthor">
+            <section id="landingAuthor" data-nav="Author">
                 <h2>Meet The Author</h2>
                 <img class="author" src="media/author-profile.webp" alt="Picture of Olivie Blake">
                 <p class="author-bio">
@@ -61,7 +57,7 @@
                     Olivie lives and works in Los Angeles with her husband and goblin prince/toddler, where she is generally tolerated by her rescue pit bull.
                 </p>
             </section>
-            <section class="landingNewsletter">
+            <section id="landingNewsletter" data-nav="Newsletter">
                 <div class="subscribe">
                     <h2>SUBSCRIBE FOR THE MONTHLY NEWSLETTER</h2>
                     <form action="https://api.web3forms.com/submit" method="POST">
@@ -94,5 +90,6 @@
             </div>
 
         </div>
+        <script src="js/app.js"></script>
     </body>
 </html>
