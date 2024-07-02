@@ -261,7 +261,7 @@ a{
     header{
         background: none;
     }
-    
+
     .menu-button {
         width: 30%;
     }
@@ -305,6 +305,10 @@ a{
 
     h3, h1, .bookNames {
         text-align: center;
+    }
+
+    .bookNames{
+        font-size: 8px;
     }
 
     .buyBtn {
