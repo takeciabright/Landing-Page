@@ -11,37 +11,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Make the navigation menu
     function makeNavBar() {
-        // List of sections and their titles
-        const sectionList = [
-            { id: "landingIntro", title: "Books" },
-            { id: "landingSynopsis", title: "Series Synopsis" },
-            { id: "landingAuthor", title: "Author" },
-            { id: "landingNewsletter", title: "Newsletter" }
-        ];
-        
-        // Loop through the sections
-        for (let i = 0; i < sectionList.length; i++) {
-            const section = document.getElementById(sectionList[i].id);
-            
-            // Make a new list item
+        // Get all sections
+        const sections = Array.from(document.getElementsByTagName("section"));
+
+        // Loop through all sections
+        for (let section of sections) {
+            // Create new list item
             const listItem = document.createElement("li");
             const link = document.createElement("a");
             
-            link.href = "#" + sectionList[i].id;
-            link.textContent = sectionList[i].title;
-    
-            // Make the link scroll to the section when clicked
+            // Set the link's href to the section's id
+            link.href = "#" + section.id;
+            // Set the link's text content to the section's data-nav attribute
+            link.textContent = section.getAttribute("data-nav");
+
+            // Add click event listener for smooth scrolling
             link.addEventListener('click', function(event) {
                 event.preventDefault();
-                const sectionToScrollTo = document.getElementById(this.getAttribute("href").slice(1));
-                sectionToScrollTo.scrollIntoView({behavior: "smooth"});
+                section.scrollIntoView({behavior: "smooth"});
                 
                 // Close the menu if it's open on small screens
                 if (window.innerWidth <= 1024) {
                     nav.classList.remove('show');
                 }
             });
-    
+
+            // Append the link to the list item, and the list item to the nav
             listItem.appendChild(link);
             nav.appendChild(listItem);
         }

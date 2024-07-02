@@ -2,6 +2,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,61 +17,113 @@ body {
     grid-template-rows: auto auto auto auto auto auto auto;
 }
 
-/* Header: JavaScript */
+/* Header and Navagation */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #cdb57f1c;
+    z-index: 1000;
+}
+
+nav#nav{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+}
 
 #nav-sections {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 0;text-align: center;
+    margin: 0;
+    text-align: center;
 }
 
 #nav-sections li {
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 #nav-sections a {
-    
     text-decoration: none;
+    text-transform: uppercase;
     color: #cdb57f;
+    transition: all 0.3s ease;
 }
 
-.nav-toggle {
-    display: none;
-}
-
-/* Header */
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 20px;
-    font-size: 25px;
+#nav-sections a:hover,
+#nav-sections a.active {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .menu-button {
     display: none;
 }
 
-header a {
-    color: #a27d3f;
+/* Sections */
+
+section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
-ul li {
-    margin-right: 80px;
-    display: inline;
-    text-transform: uppercase;
+section.active-section {
+    background-color: rgba(205, 181, 127, 0.1);
+    border-left: 5px solid #cdb57f;
 }
 
-li a {
-    color: rgb(121 116 101);
+/* Typography */
+h3 {
+    font-family: "Playfair", serif;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
-a {
-    color: #cdb57f;
-    text-decoration: none;
+h1 {
+    font-family: "Taviraj";
+    font-weight: 100;
+    font-size: 6.875em;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-family: "Taviraj";
+    font-weight: 300;
+    font-size: 2.875em;
+}
+
+p {
+    font-family: "Yuji Syuku", serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    height: 50px;
+    color:#cdb57f;
+    background-color: transparent;
+    border-color: #cdb57f;
+    padding: 10px 20px;
+    font-family: "Taviraj", serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #cdb67f45;
+    
 }
 
 /* Section: landingIntro */
@@ -81,7 +134,6 @@ a {
 #landingNewsletter {
     background-image: url("/media/background.png");
     background-size: cover;
-    text-align: center;
 }
 
 #landingIntro {
@@ -108,26 +160,6 @@ a {
     padding-left: 60px;
 }
 
-h3,
-h1,
-.bookNames {
-    text-align: center;
-}
-
-h3 {
-    font-family: "Playfair";
-    font-size: 35px;
-    font-weight: 200;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-family: "Taviraj";
-    font-weight: 100;
-    font-size: 6.875em;
-    margin: 0 0 20px 0;
-}
-
 .bookNames {
     font-family: "Taviraj";
     font-weight: 100;
@@ -151,11 +183,6 @@ h1 {
     margin-top: 20px;
 }
 
-button {
-    height: 50px;
-    font-size: 16px;
-}
-
 /* Section: landingSynopsis; paragraph */
 /* Section: landingAuthor */
 
@@ -168,13 +195,6 @@ p {
     max-width: 800px;
 }
 
-h2 {
-    font-family: "Taviraj";
-    font-weight: 300;
-    font-size: 2.875em;
-    margin: 0;
-}
-
 .author {
     max-width: 309px;
     width: 15%;
@@ -184,13 +204,6 @@ h2 {
 }
 
 /* Section: landingNewsletter */
-
-.subscribe {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .form-box {
     display: inline;
@@ -214,15 +227,6 @@ input {
     margin-bottom: 15px;
 }
 
-button {
-    height: 45px;
-    width: 150px;
-    border-color: #cdb57f;
-    color: #cdb57f;
-    font-weight: 200;
-    background-color: transparent;
-    cursor: pointer;
-}
 
 /* Section: socialMedia */
 
@@ -235,6 +239,11 @@ img {
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: #cdb57f;
+}
+
 /* Footer */
 
 #footer {
@@ -242,7 +251,7 @@ img {
     justify-content: center;
     align-items: center;
     font-family: "Taviraj";
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
 }
 
