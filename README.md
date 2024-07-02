@@ -15,6 +15,11 @@ This project is a responsive landing page for author Olivie Blake, featuring her
 
 This landing page showcases Olivie Blake's books, provides a series synopsis, author information, and a newsletter signup form. It's designed to be fully responsive, providing an optimal viewing experience across a wide range of devices.
 
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
 ## Features
 
 - Responsive design for mobile, tablet, and desktop viewing
