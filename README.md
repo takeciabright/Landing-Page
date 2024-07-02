@@ -4,12 +4,13 @@ This project is a responsive landing page for author Olivie Blake, featuring her
 
 ## Table of Contents
 - [Description](#description)
+- [Technologies](#technologies-used)
 - [Features](#features)
+- [Live Demo](#live-demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
