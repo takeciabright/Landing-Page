@@ -29,8 +29,8 @@ This landing page showcases Olivie Blake's books, provides a series synopsis, au
 - Newsletter signup form
 - Social media links
 
-  ## Live Demo
-To see the cards, [click here](https://takeciabright.github.io/Landing-Page/)
+## Live Demo
+  For a live demo of the landing page, [click here](https://takeciabright.github.io/Landing-Page/)
 
 ## Installation
 
