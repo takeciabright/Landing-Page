@@ -258,8 +258,11 @@ a{
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
+    header{
+        background: none;
+    }
+    
     .menu-button {
-        display: block;
         width: 30%;
     }
 
@@ -274,7 +277,7 @@ a{
         top: 60px; /* Adjust based on your header height */
         left: 0;
         width: 100%;
-        background-color: black; /* Match your site's background */
+        background-color: #564c34fb; /* Match your site's background */
         padding: 10px 0;
     }
 
@@ -344,7 +347,7 @@ a{
     }
 
     .menu-button {
-        display: block;
+       position: relative;
     }
 
     h1 {
