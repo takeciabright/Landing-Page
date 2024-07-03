@@ -63,6 +63,7 @@ nav#nav{
 
 .menu-button {
     display: none;
+    margin-top: 0;
 }
 
 /* Sections */
@@ -274,11 +275,12 @@ a{
         display: flex !important;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        left: 0;
-        width: 100%;
+        top: 50px; /* Adjust based on your header height */
+        left: 5px;
+        width: 29%;
         background-color: #564c34fb; /* Match your site's background */
         padding: 10px 0;
+        border-radius: 0 5px 5px;    
     }
 
     #nav-sections li {
@@ -308,7 +310,17 @@ a{
     }
 
     .bookNames{
-        font-size: 8px;
+        font-size: 2vw;
+    }
+
+    .book-mockup {
+
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .author{
+        width: 100%;
     }
 
     .buyBtn {
@@ -332,14 +344,6 @@ a{
 
     #nav-sections {
         display: none; /* Hide by default on small screens */
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        left: 0;
-        width: 100%;
-        background-color: black; /* Match your site's background */
-        padding: 10px 0;
     }
 
     #nav-sections.show {
@@ -362,11 +366,6 @@ a{
         font-size: 2.5em;
     }
 
-    .book-mockup {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
     input {
         width: 80%;
         margin-right: 0;
@@ -376,6 +375,17 @@ a{
         width: 100%;
         margin-top: 15px;
     }
+}
+
+@media  screen and (max-width: 600px) {
+   
+    .container{
+    padding: 10px;
+   }
+
+   h1{
+    font-size: 8vw;
+   }
 }
 
 @media screen and (max-width: 480px) {
