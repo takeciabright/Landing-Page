@@ -86,6 +86,48 @@ document.addEventListener('DOMContentLoaded', function() {
         handleResize();
     }
 
+    let slidePosition = 0;
+    //Get images
+    const slides = document.getElementsByClassName("carousel_bookImg");
+    //Get length of carousel
+    const totalSlides = slides.length;
+
+    //Get next and prev buttons
+    document.getElementById('carousel-btn--next').addEventListener("click", moveToNextSlide);
+    document.getElementById('carousel-btn--prev').addEventListener("click", moveToPrevSlide);
+
+    function updateSlidePositions() {
+        for (let slide of slides) {
+            slide.classList.remove('carousel_bookImg--visible');
+            slide.classList.add('carousel_bookImg--hidden');
+        }
+        slides[slidePosition].classList.add('carousel_bookImg--visible');
+    }
+
+    //Create next function
+    function moveToNextSlide() {
+        if (slidePosition === totalSlides - 1) {
+            slidePosition = 0;
+        } else {
+            slidePosition++;
+        }
+        updateSlidePositions();
+    }
+
+    //Create prev function
+    function moveToPrevSlide() {
+        if (slidePosition === 0) {
+            slidePosition = totalSlides - 1;
+        } else {
+            slidePosition--;
+        }
+        updateSlidePositions();
+    }
+
+    // Initialize the first slide
+    updateSlidePositions();
+
+
     // Handle window resize
     function handleResize() {
         if (window.innerWidth > 1024) {
