@@ -435,9 +435,12 @@ a{
 }
 
 @media  screen and (max-width: 600px) {
-   
-    .container{
+   .container{
     padding: 10px;
+}
+
+.carousel-action{
+    width: 400px; 
 }
 
 h1{
@@ -446,6 +449,10 @@ h1{
 }
 
 @media screen and (max-width: 480px) {
+    .carousel-action{
+        width: 330px; 
+    }
+    
     h1 {
         font-size: 2.5em;
     }
