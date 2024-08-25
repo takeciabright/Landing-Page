@@ -318,11 +318,57 @@ a{
     }
 
     .book-mockup {
-
-        margin: 0 auto;
-        padding: 0;
+        display: none;
     }
 
+    .carousel{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .carousel_bookImg, 
+    .carousel .carousel_bookImg--hidden{
+        display: none;
+    }
+    
+    .carousel_bookImg img {
+        max-width: 600px;
+        width: 90%;
+        height: auto;
+    }
+    
+    .carousel .carousel_bookImg--visible{
+        display: block;
+        animation: fadeVisiblilty 0.5s;
+    }
+    
+    .carousel-action{
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        top: 45%;
+        width: 600px;
+    }
+    
+    .carousel button {
+        padding: 0;
+        width: 30px;
+        height: 40px;
+    }
+    
+    @keyframes fadeVisiblilty{
+        0% {
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            transform: opacity linear;
+        }
+    }
+    
     .author{
         width: 100%;
     }
