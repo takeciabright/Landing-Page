@@ -161,6 +161,10 @@ button:hover {
     padding-left: 60px;
 }
 
+.carousel{
+    display: none;
+}
+
 .bookNames {
     font-family: "Taviraj";
     font-weight: 100;
