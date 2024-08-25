@@ -452,7 +452,7 @@ h1{
     .carousel-action{
         width: 330px; 
     }
-    
+
     h1 {
         font-size: 2.5em;
     }
@@ -464,5 +464,19 @@ h1{
     p {
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .carousel-action{
+        display: flex;
+        position: absolute;
+        top: 85%;
+        width: 100px; 
+    }
+
+    .carousel button{
+        height: 25px;
+        font-size: 14px;
     }
 }
