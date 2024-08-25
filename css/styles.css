@@ -368,7 +368,7 @@ a{
             transform: opacity linear;
         }
     }
-    
+
     .author{
         width: 100%;
     }
@@ -406,6 +406,13 @@ a{
 
     .menu-button {
        position: relative;
+    }
+
+    .carousel_bookImg{
+        width: 80%;
+    }
+    .carousel-action{
+        width: 550px; 
     }
 
     h1 {
